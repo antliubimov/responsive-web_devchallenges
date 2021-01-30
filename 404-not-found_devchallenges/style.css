@@ -1,0 +1,128 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --min-width: 375px;
+
+    --font-header: 'Inconsolata', monospace;
+    --font-content:'Space Mono', monospace;
+    --font-footer: 'Montserrat', sans-serif;
+
+    --color-primary: #ffffff;
+    --color-grey-1: #333333;
+    --color-grey-2: #4f4f4f;
+}
+
+body {
+    height: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-grey-1);
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: var(--min-width);
+    margin: 0 auto;
+    padding: 4px 24px;
+}
+
+.main-header {
+    margin-bottom: 48px;
+    font-family: var(--font-header);
+}
+
+.main-header h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 96px;
+    font-family: var(--font-content);
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.035em;
+}
+
+.content__img {
+    margin: 0 20px 40px 20px;
+}
+
+.content__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content__title {
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 71px;
+}
+
+.content__desc {
+    margin-bottom: 66px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.content__btn {
+    padding: 24px 43px;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: var(--color-grey-1);
+}
+
+.main-footer {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+    font-family: var(--font-footer);
+}
+
+@media only screen and (min-width: 769px) {
+    .wrapper {
+        width: 1200px;
+        padding: 24px 77px;
+    }
+
+    .main-header {
+        margin-bottom: 184px;
+    }
+
+    .content {
+        flex-direction: row;
+        margin-bottom: 293px;
+    }
+
+    .content__img {
+        margin-right: 118px;
+    }
+
+    .content__title{
+        margin-top: 0;
+        font-size: 64px;
+        line-height: 95px;
+    }
+
+    .content__desc {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
