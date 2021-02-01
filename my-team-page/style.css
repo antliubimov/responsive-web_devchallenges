@@ -1,0 +1,92 @@
+:root {
+    --color-bg: #fafafa;
+    --color-font: #000000;
+
+    --font-title: 'PT Serif', serif;
+    --font-text: 'Poppins', sans-serif;
+    --font-footer: 'Montserrat', sans-serif;
+}
+
+*, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 375px;
+    background-color: var(--color-bg);
+    color: var(--color-font);
+}
+
+.wrapper {
+    padding: 71px 12px 69px;
+}
+
+.header {
+    margin-bottom: 38px;
+}
+
+.header__title {
+    font-family: var(--font-title);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+
+}
+
+.content {
+    margin-bottom: 62px;
+    font-family: var(--font-text);
+
+}
+
+.content__main {
+    margin-bottom: 60px;
+}
+
+.content__main__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+.content__main__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.photos__item {
+    background-color: aquamarine;
+    display: flex;
+    width: 175px;
+    list-style: none;
+}
+
+.photo__name {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+.photo__role {
+    font-family: var(--font-title);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: uppercase;
+}
+
+.photo__img {
+    width: 139px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.footer {
+    text-align: center;
+    color: #a9a9a9;
+}
