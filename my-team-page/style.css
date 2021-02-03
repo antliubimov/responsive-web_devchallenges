@@ -59,20 +59,37 @@ body {
     line-height: 21px;
 }
 
-.photos__item {
-    background-color: aquamarine;
+.content__photos {
     display: flex;
-    width: 175px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photos__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 160px;
     list-style: none;
 }
 
+.photos__item:nth-child(2n) {
+    margin-top: 30px;
+}
+
 .photo__name {
+    order: 3;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
 }
 
 .photo__role {
+    order: 2;
+    margin-left: 7px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     font-family: var(--font-title);
     font-size: 10px;
     font-weight: 400;
@@ -81,8 +98,10 @@ body {
 }
 
 .photo__img {
+    order: 1;
+    margin-bottom: 10px;
     width: 139px;
-    height: 220px;
+    height: 209px;
     object-fit: cover;
 }
 
