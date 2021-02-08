@@ -240,4 +240,114 @@ body {
     border-top: 1px solid var(--color-footer);
 }
 
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        box-sizing: border-box;
+        width: var(--width-desktop);
+        padding: 42px 77px;
+    }
+
+    .header {
+        margin-bottom: 125px;
+    }
+
+    #menu__toggle, .menu__btn {
+        position: absolute;
+	    width: 1px;
+	    height: 1px;  margin: -1px;
+	    border: 0;
+	    padding: 0;
+	    white-space: nowrap;
+	    clip-path: inset(100%);
+	    clip: rect(0 0 0 0);
+	    overflow: hidden;
+    }
+
+    .menu__box {
+        position: relative;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        visibility: visible;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .menu__item {
+        padding: 6px 3px;
+    }
+
+    .menu__item:hover {
+        background-color: initial;
+        color: #CFD8DC;
+    }
+
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 90px;
+    }
+
+    .main__desc {
+        margin-right: 140px;
+    }
+
+    .main__title {
+        margin-bottom: 40px;
+        font-size: 48px;
+        line-height: 61px;
+    }
+
+    .main__text {
+        margin-bottom: 48px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .main__btn {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .main__img {
+        width: 737px;
+    }
+
+    .main__about {
+        top: -70px;
+        right: -130px;
+        width: 410px;
+        padding: 23px 97px 34px 26px;
+    }
+
+    .author__name {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .author__role {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .author__img {
+        width: 50px;
+    }
+
+    .main__about__designed {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .footer__text {
+        border: none;
+    }
+}
 
