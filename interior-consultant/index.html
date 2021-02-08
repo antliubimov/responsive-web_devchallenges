@@ -13,25 +13,25 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
+    <header class="header">
       <div class="logo">This interior</div>
-      <nav>
-        <input type="checkbox" name="nav_btn" id="nav_btn">
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul class="nav">
+      <nav class="hamburger-menu">
+        <input type="checkbox" name="menu__toggle" id="menu__toggle">
+        <label for="menu__toggle" class="menu__btn">
+          <span></span>
+        </label>
+        <ul class="menu__box">
           <li class="nav__item">
-            <a class="nav__link" href="#">Home</a>
+            <a class="menu__item active" href="#">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Collection</a>
+            <a class="menu__item" href="#">Collection</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">About</a>
+            <a class="menu__item" href="#">About</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Contact</a>
+            <a class="menu__item" href="#">Contact</a>
           </li>
         </ul>
       </nav>
