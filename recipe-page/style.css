@@ -44,6 +44,7 @@ body {
 	margin: 0 auto;
 	padding: 32px 12px 21px 11px;
 	font-family: var(--font-main);
+	font-style: normal;
 }
 
 .header {
@@ -215,11 +216,14 @@ body {
 
 .instructions__item {
 	position: relative;
-	margin-bottom: 25px;
 	padding-left: 63px;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
+}
+
+.instructions__item:not(:last-child) {
+	margin-bottom: 25px;
 }
 
 .instructions__item::before {
@@ -291,6 +295,110 @@ body {
 
 
 
-@media only screen and (min-width: var(--width-desktop)) {
+@media only screen and (min-width: 969px) {
+	.wrapper {
+		width: var(--width-desktop);
+	}
+
+	.header__title {
+		font-size: 48px;
+		line-height: 64px;
+	}
+
+	.header__info {
+		margin-bottom: 43px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.header__img {
+		margin-bottom: 43px;
+	}
+
+
+
+	.content {
+		position: relative;
+		margin-bottom: 100px;
+	}
+
+	.recipe__info {
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 216px;
+		margin-bottom: 0;
+		padding-top: 57px;
+		padding-bottom: 50px;
+		padding-left: 57px;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		border-radius: 12px;
+	}
+
+	.recipe__servings {
+    	margin-bottom: 43px;
+	}
+
+	.recipe__time {
+		flex-direction: column;
+	}
+
+	.recipe__time .field:not(:last-child) {
+		margin-bottom: 43px;
+	}
+
+	.info__name {
+		margin-bottom: 4px;
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.info__name::before {
+		top: 2px;
+		left: -34px;
+		width: 28px;
+		height: 28px;
+		background-size: 28px;
+		background-repeat: no-repeat;
+	}
+
+	.info__more {
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.recipe__ingredients,
+	.recipe__instructions,
+	.recipe__source {
+		width: 637px;
+	}
+
+	.recipe__instructions {
+		margin-bottom: 57px;
+	}
+
+	.recipe__title {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	.ingredient__title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.ingredient__label {
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	.recipe__source {
+		display: inline;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+
 
 }
