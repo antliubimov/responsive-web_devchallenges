@@ -43,6 +43,7 @@ body {
 }
 
 .wrapper {
+    box-sizing: border-box;
     width: var(--width-mobile);
 
     margin: 0 auto;

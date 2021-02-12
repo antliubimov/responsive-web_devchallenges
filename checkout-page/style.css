@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+    --width-mobile: 375px;
+    --width-desktop: 960px;
+
+    --color-bg: #ffffff;
+    --color-title: #4e5150;
+    --color-main: #333333;
+    --color-info: #4f4f4f;
+    --color-placeholder: #828282;
+    --color-btn: #f2994a;
+    --color-bag: #f2f2f2;
+
+    --font-main: 'Montserrat', sans-serif;
+
+    --border-radius: 12px;
+}
+
+*, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: var(--color-bg);
+    font-family: var(--font-main);
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+.header {
+    color: var(--color-title);
+}
+
+.wrapper {
+    box-sizing: border-box;
+    width: 375px;
+    margin: 0 auto;
+    padding: 32px 12px 19px 12px;
+}
+
+.header {
+    margin-bottom: 21px;
+}
+
+.header__title {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.bag {
+    box-sizing: border-box;
+    margin-bottom: 39px;
+    padding: 30px 14px 13px 27px;
+    background-color: var(--color-bag);
+    border-radius: var(--border-radius);
+}
+
+.bag__items {
+    margin-bottom: 87px;
+}
+
+.bag__item {
+    display: flex;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-title);
+}
+
+.bag__item:not(:last-child) {
+    margin-bottom: 29px;
+}
+
+.bag__item__name {
+    margin-bottom: 11px;
+}
+
+.bag__item__price {
+    margin-bottom: 30px;
+}
+
+.price__sale {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-btn);
+}
+
+.price__reg {
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: line-through;
+}
+
+.bag__item__count {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 123px;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid var(--color-placeholder);
+    border-radius: var(--border-radius);
+}
+
+.change__count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+}
+
+.bag__item__photo {
+    order: -1;
+    width: 123px;
+    height: 125px;
+    margin-right: 20px;
+}
+
+.bag__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.bag__total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 17px;
+    border-top: 1px solid #bdbdbd;
+}
+
+.main {
+    margin-bottom: 100px;
+}
+
+
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a9a9a9;
+}

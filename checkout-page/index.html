@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="header__title">Checkout</h1>
+    </header>
+    <main class="main">
+      <div class="bag">
+        <div class="bag__items">
+          <div class="bag__item">
+            <div class="bag__item__desc">
+              <p class="bag__item__name">Vintage Backbag</p>
+              <p class="bag__item__price">
+                <span class="price__sale">$54.99</span>
+                <span class="price__reg">$94.99</span>
+              </p>
+              <div class="bag__item__count">
+                <span class="change__count minus">-</span>
+                <span>1</span>
+                <span class="change__count plus">+</span>
+              </div>
+            </div>
+            <figure class="bag__item__photo">
+              <img class="bag__img" src="photo1.png" alt="Vintage backbag">
+            </figure>
+
+          </div>
+          <div class="bag__item">
+            <div class="bag__item__desc">
+              <p class="bag__item__name">Levi Shoes</p>
+              <p class="bag__item__price">
+                <span class="price__sale">$74.99</span>
+                <span class="price__reg">$124.99</span>
+              </p>
+              <div class="bag__item__count">
+                <span class="change__count minus">-</span>
+                <span>1</span>
+                <span class="change__count plus">+</span>
+              </div>
+            </div>
+            <figure class="bag__item__photo">
+              <img class="bag__img" src="photo2.png" alt="Levi Shoes">
+            </figure>
+          </div>
+        </div>
+        <div class="bag__total">
+          <span>Shipping</span>
+          <span>$19</span>
+        </div>
+        <div class="bag__total">
+          <span>Total</span>
+          <span>$148.98</span>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__contact">
+          <h3>Contact information</h3>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email...">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+        </div>
+        <div class="info__address">
+          <h3>Shipping Address</h3>
+          <label for="full_name">Full name</label>
+          <input type="text" name="full_name" id="full_name" placeholder="Enter your full name...">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="Enter your address...">
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" placeholder="Enter your city...">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option value="">Your country...</option>
+            <option value="usa">The USA</option>
+            <option value="canada">Canada</option>
+            <option value="germany">Germany</option>
+          </select>
+          <label for="postal_code">Postal code</label>
+          <input type="text" name="postal_code" id="postal_code" placeholder="Your postal code...">
+          <input type="checkbox" name="save_next" id="save_next">
+          <label for="save_next">Save this information for next time</label>
+        </div>
+        <a href="#" class="btn">Continue</a></div>
+    </main>
+    <footer class="footer">
+      ant.liubimov @ DevChallenges.io
+    </footer>
+  </div>
+</body>
+</html>
