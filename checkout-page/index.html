@@ -62,35 +62,57 @@
           <span>$148.98</span>
         </div>
       </div>
-      <div class="info">
-        <div class="info__contact">
-          <h3>Contact information</h3>
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email...">
-          <label for="phone">Phone</label>
-          <input type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+      <form class="info">
+        <div class="info__list info__contact">
+          <h3 class="info__title">Contact information</h3>
+          <div class="info__item">
+            <label class="info__label" for="email">E-mail</label>
+            <input class="info__input" type="email" name="email" id="email" placeholder="Enter your email...">
+          </div>
+          <div class="info__item">
+            <label class="info__label" for="phone">Phone</label>
+            <input class="info__input" type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+          </div>
         </div>
-        <div class="info__address">
-          <h3>Shipping Address</h3>
-          <label for="full_name">Full name</label>
-          <input type="text" name="full_name" id="full_name" placeholder="Enter your full name...">
-          <label for="address">Address</label>
-          <input type="text" name="address" id="address" placeholder="Enter your address...">
-          <label for="city">City</label>
-          <input type="text" name="city" id="city" placeholder="Enter your city...">
-          <label for="country">Country</label>
-          <select name="country" id="country">
-            <option value="">Your country...</option>
-            <option value="usa">The USA</option>
-            <option value="canada">Canada</option>
-            <option value="germany">Germany</option>
-          </select>
-          <label for="postal_code">Postal code</label>
-          <input type="text" name="postal_code" id="postal_code" placeholder="Your postal code...">
-          <input type="checkbox" name="save_next" id="save_next">
-          <label for="save_next">Save this information for next time</label>
+        <div class="info__list info__address">
+          <h3 class="info__title">Shipping Address</h3>
+          <div class="info__item">
+            <label class="info__label" for="full_name">Full name</label>
+            <input class="info__input" type="text" name="full_name" id="full_name"
+                   placeholder="Enter your full name...">
+          </div>
+          <div class="info__item">
+            <label class="info__label" for="address">Address</label>
+            <input class="info__input" type="text" name="address" id="address" placeholder="Enter your address...">
+          </div>
+          <div class="info__item">
+            <label class="info__label" for="city">City</label>
+            <input class="info__input" type="text" name="city" id="city" placeholder="Enter your city...">
+          </div>
+          <div class="info__item info__item--row">
+            <div class="info__item">
+              <label class="info__label" for="country">Country</label>
+              <select class="info__input" name="country" id="country">
+                <option class="placeholder" disabled selected>Your country...</option>
+                <option value="usa">The USA</option>
+                <option value="canada">Canada</option>
+                <option value="germany">Germany</option>
+              </select>
+            </div>
+            <div class="info__item">
+              <label class="info__label" for="postal_code">Postal code</label>
+              <input class="info__input" type="text" name="postal_code" id="postal_code"
+                     placeholder="Your postal code...">
+            </div>
+          </div>
+          <div class="info__item info__item--save">
+            <input class="hidden" type="checkbox" name="save_next" id="save_next">
+            <label class="info__label" for="save_next">Save this information for next
+            time</label>
+          </div>
         </div>
-        <a href="#" class="btn">Continue</a></div>
+        <input class="info__btn" type="submit" value="Continue">
+      </form>
     </main>
     <footer class="footer">
       ant.liubimov @ DevChallenges.io

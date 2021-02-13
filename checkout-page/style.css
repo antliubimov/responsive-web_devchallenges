@@ -30,6 +30,19 @@ body {
     color: var(--color-main);
 }
 
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .header {
     color: var(--color-title);
 }
@@ -48,6 +61,12 @@ body {
 .header__title {
     font-size: 24px;
     line-height: 29px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .bag {
@@ -140,15 +159,228 @@ body {
     border-top: 1px solid #bdbdbd;
 }
 
-.main {
-    margin-bottom: 100px;
+.info {
+   display: flex;
+    flex-direction: column;
+}
+
+.info__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__title {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.info__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.info__item--row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info__item--row > .info__item {
+    margin-bottom: 0;
+    width: 163px;
+}
+
+.info__label {
+    position: relative;
+    margin-bottom: 5px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.info__label::before {
+    content: '';
+    position: absolute;
+    top: 29px;
+    left: 11px;
+    width: 17px;
+    height: 17px;
+    background-size: 17px 17px;
+    background-repeat: no-repeat;
+}
+
+.info__label[for='email']::before {
+    background-image: url('./svg/mail-24px.svg');
+}
+.info__label[for='phone']::before {
+    background-image: url('./svg/call-24px.svg');
+}
+.info__label[for='full_name']::before {
+    background-image: url('./svg/account_circle-24px.svg');
+}
+.info__label[for='address']::before {
+    background-image: url('./svg/home-24px.svg');
+}
+.info__label[for='city']::before {
+    background-image: url('./svg/location_city-24px.svg');
+}
+.info__label[for='country']::before {
+    background-image: url('./svg/location_city-24px.svg');
+}
+.info__label[for='postal_code']::before {
+    background-image: url('./svg/markunread_mailbox-24px.svg');
+}
+
+.info__input {
+    padding: 12px 12px 12px 40px;
+    font-size: 12px;
+    line-height: 15px;
+    border: 1px solid var(--color-placeholder);
+    border-radius: var(--border-radius);
+}
+
+.info__input::placeholder {
+    color: var(--color-placeholder);
 }
 
 
+.info__item--save {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+#save_next ~ .info__label::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -27px;
+    width: 20px;
+    height: 20px;
+    background-image: url('svg/check_box_outline_blank-black-24dp.svg');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+#save_next:checked ~ .info__label::before {
+    background-image: url('svg/check_box-black-24dp.svg');
+}
+
+.info__btn {
+    align-self: flex-end;
+    padding: 17px 45px;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--color-bg);
+    background-color: var(--color-btn);
+    border-radius: var(--border-radius);
+    border-color: transparent;
+}
 
 .footer {
     text-align: center;
     font-size: 14px;
     line-height: 17px;
     color: #a9a9a9;
+}
+
+@media only screen and (min-width: 984px) {
+    .wrapper {
+        box-sizing: unset;
+        width: 960px;
+    }
+
+    .header__title {
+        margin-bottom: 51px;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .main {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 166px;
+    }
+
+    .bag {
+        width: 383px;
+    }
+
+    .bag__item__name,
+    .price__sale {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .price__reg {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .bag__item__photo {
+        width: 134px;
+        height: 136px;
+    }
+
+    .bag__item__count {
+        width: 134px;
+        height: 52px;
+    }
+
+    .bag__total {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .info {
+        width: 465px;
+    }
+
+    .info__title {
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .info__item {
+        margin-bottom: 20px;
+    }
+
+    .info__item--row > .info__item {
+        width: 217px;
+    }
+
+    .info__item--save {
+        margin-left: 30px;
+    }
+
+    .info__label {
+        margin-bottom: 7px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .info__label::before {
+        top: 39px;
+        left: 14px;
+        width: 22px;
+        height: 22px;
+        background-size: 22px 22px;
+    }
+
+    .info__input {
+        padding: 18px 18px 18px 52px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #save_next ~ .info__label::before {
+        top: -5px;
+        left: -32px;
+        width: 24px;
+        height: 24px;
+        background-size: 24px 24px;
+    }
 }
