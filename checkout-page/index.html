@@ -67,11 +67,11 @@
           <h3 class="info__title">Contact information</h3>
           <div class="info__item">
             <label class="info__label" for="email">E-mail</label>
-            <input class="info__input" type="email" name="email" id="email" placeholder="Enter your email...">
+            <input class="info__input" type="email" name="email" id="email" placeholder="Enter your email..." required>
           </div>
           <div class="info__item">
             <label class="info__label" for="phone">Phone</label>
-            <input class="info__input" type="tel" name="phone" id="phone" placeholder="Enter your phone...">
+            <input class="info__input" type="tel" pattern="2-[0-9]{3}-[0-9]{3}" name="phone" id="phone" placeholder="Enter your phone..." required>
           </div>
         </div>
         <div class="info__list info__address">
@@ -79,30 +79,33 @@
           <div class="info__item">
             <label class="info__label" for="full_name">Full name</label>
             <input class="info__input" type="text" name="full_name" id="full_name"
-                   placeholder="Enter your full name...">
+                   placeholder="Enter your full name..." required>
           </div>
           <div class="info__item">
             <label class="info__label" for="address">Address</label>
-            <input class="info__input" type="text" name="address" id="address" placeholder="Enter your address...">
+            <input class="info__input" type="text" name="address" id="address" placeholder="Enter your address..." required>
           </div>
           <div class="info__item">
             <label class="info__label" for="city">City</label>
-            <input class="info__input" type="text" name="city" id="city" placeholder="Enter your city...">
+            <input class="info__input" type="text" name="city" id="city" placeholder="Enter your city..." required>
           </div>
           <div class="info__item info__item--row">
             <div class="info__item">
               <label class="info__label" for="country">Country</label>
-              <select class="info__input" name="country" id="country">
-                <option class="placeholder" disabled selected>Your country...</option>
-                <option value="usa">The USA</option>
-                <option value="canada">Canada</option>
-                <option value="germany">Germany</option>
-              </select>
+              <div class="info__input info__input--select">
+                <select class="info__select" name="country" id="country" required>
+                  <option class="placeholder" value="" disabled selected>Your country...</option>
+                  <option value="usa">The USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="germany">Germany</option>
+                </select>
+              </div>
+              <span class="focus"></span>
             </div>
             <div class="info__item">
               <label class="info__label" for="postal_code">Postal code</label>
               <input class="info__input" type="text" name="postal_code" id="postal_code"
-                     placeholder="Your postal code...">
+                     placeholder="Your postal code..." required>
             </div>
           </div>
           <div class="info__item info__item--save">
