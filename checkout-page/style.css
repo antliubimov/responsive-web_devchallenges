@@ -114,6 +114,7 @@ body {
 }
 
 .bag__item__count {
+    outline: none;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -123,8 +124,17 @@ body {
     padding: 0 10px;
     font-size: 16px;
     line-height: 20px;
+    color: var(--color-main);
     border: 1px solid var(--color-placeholder);
     border-radius: var(--border-radius);
+}
+
+.item__count__number {
+    width: 50px;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: var(--color-bag);
 }
 
 .change__count {
@@ -133,8 +143,10 @@ body {
     align-items: center;
     width: 19px;
     height: 19px;
+    border: none;
     border-radius: 4px;
     background-color: #e0e0e0;
+    cursor: pointer;
 }
 
 .bag__item__photo {
@@ -334,6 +346,10 @@ body {
     color: #a9a9a9;
 }
 
+.js-input--color {
+    color: var(--color-main);
+}
+
 @media only screen and (min-width: 984px) {
     .wrapper {
         box-sizing: unset;
@@ -427,6 +443,13 @@ body {
 
     .info__input--select {
         padding: 0;
+    }
+
+    .info__input--select:after {
+        width: 21px;
+        height: 21px;
+        margin-right: 11px;
+        background-size: 21px 21px;
     }
 
     .info__select {
