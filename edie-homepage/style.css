@@ -45,3 +45,160 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: var(--width-mobile);
+  margin: 0 auto;
+  padding: 12px 12px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.header__logo {
+  font-family: var(--font-logo);
+  font-weight: 800;
+}
+
+.header__nav {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 7px;
+  left: -12px;
+  width: 18px;
+  height: 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-title);
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -5px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 5px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  background-color: var(--color-bg);
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  background-color: var(--color-bg);
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  background-color: var(--color-bg);
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .nav {
+  visibility: visible;
+  right: -12px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  position: absolute;
+  top: -12px;
+  right: -100%;
+  width: 200px;
+  height: 400px;
+  margin: 0;
+  list-style: none;
+  background-color: var(--color-bf-footer);
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.nav__link {
+  color: var(--color-bg);
+  text-decoration: none;
+}
+
+.nav__link:active,
+.nav__link:hover {
+  color: var(--color-blue);
+}
+
+.about {
+  margin-bottom: 22px;
+}
+
+.about__question {
+  padding-left: 28px;
+  padding-right: 46px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--color-blue);
+}
+
+.about__title {
+  margin-bottom: 15px;
+  padding-left: 28px;
+  padding-right: 46px;
+}
+
+.about__img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.motivation {
+  padding-left: 28px;
+  padding-right: 46px;
+}
+
+.motivation__desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

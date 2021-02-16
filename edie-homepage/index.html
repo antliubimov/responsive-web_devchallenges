@@ -14,11 +14,15 @@
 <body>
  <div class="container">
    <header class="header">
-     <div class="header__logo">
+     <div class="header__logo title">
        Edie
      </div>
-     <div class="header__nav">
-      <ul class="nav">
+     <nav class="header__nav">
+       <input type="checkbox" name="menu__toggle" id="menu__toggle">
+       <label for="menu__toggle" class="menu__btn">
+         <span></span>
+       </label>
+      <ul class="nav title">
         <li class="nav__item">
           <a href="#" class="nav__link">Home</a>
         </li>
@@ -35,19 +39,22 @@
           <a href="#" class="nav__link">Contact  </a>
         </li>
       </ul>
-     </div>
+     </nav>
    </header>
 
    <main class="content">
      <h1 class="hidden">Edie Company</h1>
      <div class="about">
-       <p>Unhappy with your website?</p>
-       <h2>We create beautiful and fast web services</h2>
+       <p class="about__question">Unhappy with your website?</p>
+       <h2 class="about__title title">We create beautiful and fast web services</h2>
        <figure>
-         <img src="heroImage.jpg" alt="Our heroes">
+         <img class="about__img" src="heroImage.jpg" alt="Our heroes">
        </figure>
-       <h3>Story, emotion and purpose</h3>
-       <p>We help transform your ideas into real world applications that will outperform your
+     </div>
+
+     <div class="motivation">
+       <h2 class="motivation__title title">Story, emotion and purpose</h2>
+       <p class="motivation__desc">We help transform your ideas into real world applications that will outperform your
          toughest competition and help you achieve your strategic goals in short period of
          time.</p>
        <div class="subscribe">
@@ -58,6 +65,7 @@
      </div>
 
      <div class="services">
+       <h2 class="services__title title">We offer high demand services</h2>
        <div class="service">
          <h4 class="service__title">UI/UX Design</h4>
          <p class="service__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
