@@ -1,0 +1,47 @@
+:root {
+  --width-mobile: 375px;
+  --width-desktop: 1356px;
+
+  --color-bg: #ffffff;
+  --color-bf-footer: #100e1d;
+  --color-title: #333333;
+  --color-text: #4f4f4f;
+  --color-label: #828282;
+  --color-input: #f2f2f2;
+  --color-btn: #e0e0e0;
+  --color-blue: #2d9cdb;
+  --color-green: #27ae60;
+  --color-red: #eb5757;
+
+  --font-logo: 'Heebo', sans-serif;
+  --font-footer: 'Montserrat', sans-serif;
+  --font-main: 'Poppins', sans-serif;
+
+
+}
+
+*, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-color: var(--color-bg);
+  font-family: var(--font-main);
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	border: 0;
+	margin: -1px;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
