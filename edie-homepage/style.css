@@ -28,6 +28,8 @@
 body {
 	background-color: var(--color-bg);
   font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 24px;
   font-style: normal;
   letter-spacing: 0;
   text-align: left;
@@ -137,7 +139,7 @@ body {
   right: -12px;
 }
 
-.nav {
+.header__nav .nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,17 +155,17 @@ body {
   background-color: var(--color-bf-footer);
 }
 
-.nav__item:not(:last-child) {
-  margin-bottom: 30px;
+.header__nav .nav__item {
+  padding: 15px;
 }
 
-.nav__link {
+.header__nav .nav__link {
   color: var(--color-bg);
   text-decoration: none;
 }
 
-.nav__link:active,
-.nav__link:hover {
+.header__nav .nav__link:active,
+.header__nav .nav__link:hover {
   color: var(--color-blue);
 }
 
@@ -193,12 +195,128 @@ body {
 }
 
 .motivation {
+  margin-bottom: 102px;
   padding-left: 28px;
   padding-right: 46px;
 }
 
+.motivation__title {
+  margin-bottom: 20px;
+  padding-right: 48px;
+}
+
 .motivation__desc {
+  margin-bottom: 30px;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
 }
+
+.subscribe {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.subscribe__label {
+  font-size: 10px;
+  line-height: 15px;
+}
+
+.subscribe__input {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 19px;
+  background-color: var(--color-input);
+  border-radius: 12px;
+}
+
+.subscribe__email {
+  background-color: var(--color-input);
+  border: none;
+  outline: none;
+}
+
+
+
+.subscribe__btn {
+  padding: 11px 21px;
+  color: var(--color-input);
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 12px;
+}
+
+.services {
+  margin-bottom: 100px;
+}
+
+.services__title {
+  margin-bottom: 40px;
+  padding-left: 37px;
+  padding-right: 55px;
+}
+
+.service {
+  padding: 151px 34px 50px;
+}
+
+.service:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.service:hover {
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+}
+
+.service__title {
+  position: relative;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.service__title::before {
+  content: '';
+  position: absolute;
+  top: -105px;
+  left: 0;
+  width: 67px;
+  height: 67px;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+
+.uidesign::before {
+  background-image: url('svg/edit.svg');
+  background-color: var(--color-blue);
+}
+.frontend::before {
+  background-image: url('svg/code.svg');
+  background-color: var(--color-green);
+}
+.backend::before {
+  background-image: url('svg/storage.svg');
+  background-color: var(--color-red);
+}
+
+.service__info {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.service__btn {
+  padding: 9px 12px;
+  font-weight: 500;
+  color: var(--color-bg);
+  text-decoration: none;
+  background-color: var(--color-btn);
+  border-radius: 12px;
+}
+
+.service:hover > .service__btn {
+  background-color: var(--color-blue);
+}
+
