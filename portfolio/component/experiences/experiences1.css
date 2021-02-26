@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color : #333333;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.experiences {
+  box-sizing: border-box;
+  width: 1046px;
+  padding: 22px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.experiences__title {
+  margin-bottom: 46px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.experiences__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.experiences__item {
+  position: relative;
+  margin-left: 100px;
+}
+
+.experiences__item:not(:last-child) {
+  margin-right: 72px;
+}
+
+.experiences__item:before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: -101px;
+  width: 84px;
+  height: 84px;
+  background-size: 84px 84px;
+}
+
+.item--adidas:before {
+  background-image: url('../../img/adidas.png');
+}
+
+.item--hm:before {
+  background-image: url('../../img/hm.png');
+}
+
+.item--nivea:before {
+  background-image: url('../../img/nivea.png');
+}
+
+.date {
+  margin-bottom: 12px;
+}
+
+.role {
+  margin-bottom: 33px;
+  color: #000000;
+}
