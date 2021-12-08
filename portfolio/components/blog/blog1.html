@@ -1,0 +1,91 @@
+<div class="blog">
+  <div class="blog__content">
+    <span class="blog__title">Blog</span>
+    <div class="article">
+      <h3 class="article__title">How to organize your CSS</h3>
+      <div class="article__desc">
+        <p class="article__paragraph">
+          In this article I tell the story about Proin eu justo sit amet lacus bibendum
+          tincidunt. Vivamus non volutpat nisl, a luctus mi.
+        </p>
+        <p class="article__paragraph">
+          Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+          molestie.
+        </p>
+      </div>
+    </div>
+    <a class="blog__link" href="#">dev.to</a>
+  </div>
+  <div class="article__photo">
+    <img class="article__img" src="./img/blog.png" alt="Article">
+  </div>
+</div>
+
+
+<style scoped>
+  .blog {
+    position: relative;
+    box-sizing: border-box;
+    min-width: 536px;
+    height: 100%;
+    padding: 22px 0 22px 22px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+
+  .blog__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 465px;
+    height: 100%;
+  }
+
+  .blog__title {
+    margin-bottom: 21px;
+    color: #e0e0e0;
+  }
+
+  .article {
+    margin-bottom: 61px;
+  }
+
+  .article__title {
+    margin-bottom: 259px;
+    width: 178px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+  }
+
+  .article__paragraph:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .blog__link {
+    color: #2f80ed;
+    text-decoration: none;
+  }
+
+  .article__photo {
+    position: absolute;
+    top: 67px;
+    right: 0;
+    width: 299px;
+    height: 321px;
+  }
+
+  .article__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+  }
+
+</style>

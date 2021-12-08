@@ -1,0 +1,111 @@
+<div class="person">
+  <div class="person__about">
+    <div class="person__main">
+      <div class="person__header">
+        <p class="person__name">Billy Pearson</p>
+        <p class="person__role">Front-end developer</p>
+      </div>
+      <div class="person__contacts">
+        <p class="person__email">billy@example.com</p>
+        <p class="person__phone">(+603) 546 624 342</p>
+      </div>
+    </div>
+    <div class="person__desc">
+      <p>Self-motivated developer, who is willing to learn and create outstanding UI
+        applications.</p>
+      <p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada
+        molestie. </p>
+    </div>
+  </div>
+  <figure class="person__photo">
+    <img src="./img/photo.jpg" alt="Billy Pearson" class="person__img">
+  </figure>
+</div>
+
+
+<style scoped>
+  .person {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 800px;
+    max-width: 1100px;
+    padding: 22px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+
+  .person__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+  }
+
+  .person__name {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4f4f4f;
+  }
+
+  .person__contacts {
+    color: #4f4f4f;
+  }
+
+  .person__desc > p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .person__email {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .person__phone {
+    position: relative;
+  }
+
+  .person__email:before,
+  .person__phone:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+  }
+
+  .person__email:before {
+    background-image: url("./svg/mail-24px.svg");
+  }
+
+  .person__phone:before {
+    background-image: url("./svg/call-24px.svg");
+  }
+
+  .person__photo {
+    order: -1;
+    width: 272px;
+    height: 266px;
+    margin: 0;
+    padding: 0 34px 0 0;
+  }
+
+  .person__img {
+    width: 272px;
+    height: 266px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+</style>

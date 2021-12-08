@@ -1,0 +1,84 @@
+<div class="pages">
+  <a class="page prev" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#4f4f4f" height="24" viewBox="0 0 24 24"
+         width="24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+    </svg>
+  </a>
+  <a class="page" href="#">1</a>
+  <a class="page page--active" href="#">2</a>
+  <a class="page" href="#">3</a>
+  <div class="page--dot">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#4f4f4f" height="24" viewBox="0 0 24 24"
+         width="24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path
+        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+    </svg>
+  </div>
+  <a class="page" href="#">10</a>
+  <a class="page next" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#4f4f4f" height="24" viewBox="0 0 24 24"
+         width="24">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+    </svg>
+  </a>
+</div>
+
+<style scoped>
+  .pages {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    color: #4f4f4f;
+    border-radius: 12px;
+  }
+
+  .page {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    color: #4f4f4f;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .page:hover,
+  .page:active {
+    color: #2f80ed;
+    border-color: #2f80ed;
+  }
+
+  .page:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .page:hover svg,
+  .page:active svg {
+    fill: #2f80ed;
+  }
+
+  .page--dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+  }
+
+  .page--active,
+  .page--active:hover,
+  .page--active:active {
+    color: #ffffff;
+    background: #2f80ed;
+    border: 1px solid #2f80ed;
+  }
+
+</style>

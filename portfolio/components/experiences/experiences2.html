@@ -1,0 +1,98 @@
+
+  <div class="experiences">
+    <h3 class="experiences__title">Experiences</h3>
+    <ul class="experiences__list">
+      <li class="experiences__item item--adidas">
+        <p class="date">Feb 2017 - Current</p>
+        <p class="role">Front-end developer</p>
+        <p class="desc">
+          Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+        </p>
+      </li>
+      <li class="experiences__item item--hm">
+        <p class="date">Aug 2016 - Feb 2018</p>
+        <p class="role">Full-stack developer</p>
+        <p class="desc">
+          Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+        </p>
+      </li>
+      <li class="experiences__item item--nivea">
+        <p class="date">Jun 2015 - Aug 2016</p>
+        <p class="role">Junior front-end developer</p>
+        <p class="desc">
+          Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <style scoped>
+    .experiences {
+      box-sizing: border-box;
+      min-width: 413px;
+      padding: 22px;
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #828282;
+      background-color: #ffffff;
+      border-radius: 12px;
+    }
+
+    .experiences__title {
+      margin-bottom: 46px;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: 500;
+      color: #4f4f4f;
+    }
+
+    .experiences__list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+
+    .experiences__item {
+      position: relative;
+      margin-left: 100px;
+    }
+
+    .experiences__item:not(:last-child) {
+      margin-bottom: 36px;
+    }
+
+    .experiences__item:before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: -101px;
+      width: 84px;
+      height: 84px;
+      background-size: 84px 84px;
+    }
+
+    .item--adidas:before {
+      background-image: url('./img/adidas.png');
+    }
+
+    .item--hm:before {
+      background-image: url('./img/hm.png');
+    }
+
+    .item--nivea:before {
+      background-image: url('./img/nivea.png');
+    }
+
+    .date {
+      margin-bottom: 12px;
+    }
+
+    .role {
+      margin-bottom: 33px;
+      color: #000000;
+    }
+
+  </style>

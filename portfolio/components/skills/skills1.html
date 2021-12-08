@@ -1,0 +1,127 @@
+<div class="skills">
+  <h3 class="skills__title">Front End</h3>
+  <div class="skills__list">
+    <ul class="skills__column">
+      <li class="skills__item">
+        <span class="skill__name">React</span>
+        <div class="bar-holder">
+          <div class="bar-progress bar-progress--react"></div>
+        </div>
+      </li>
+      <li class="skills__item">
+        <span class="skill__name">JavaScript</span>
+        <div class="bar-holder">
+          <div class="bar-progress bar-progress--javascript"></div>
+        </div>
+      </li>
+      <li class="skills__item">
+        <span class="skill__name">CSS</span>
+        <div class="bar-holder">
+          <div class="bar-progress bar-progress--css"></div>
+        </div>
+      </li>
+    </ul>
+    <ul class="skills__column">
+      <li class="skills__item">
+        <span class="skill__name">Vue</span>
+        <div class="bar-holder">
+          <div class="bar-progress bar-progress--vue"></div>
+        </div>
+      </li>
+      <li class="skills__item">
+        <span class="skill__name">Redux</span>
+        <div class="bar-holder">
+          <div class="bar-progress bar-progress--redux"></div>
+        </div>
+      </li>
+      <li class="skills__item">
+        <span class="skill__name">React Native</span>
+        <div class="bar-holder">
+          <div class="bar-progress bar-progress--react-native"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<style scoped>
+  .skills {
+    box-sizing: border-box;
+    min-width: 389px;
+    width: 100%;
+    padding: 22px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4f4f4f;
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+
+  .skills__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #4f4f4f;
+  }
+
+  .skills__list {
+    list-style: none;
+  }
+
+  .skills__column:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .skills__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skills__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .bar-holder {
+    width: 222px;
+    height: 9px;
+    background: #c4c4c4;
+    border-radius: 12px;
+  }
+
+  .bar-progress {
+    height: 100%;
+    background: #2f80ed;
+    border-radius: 12px;
+  }
+
+  .bar-progress--react {
+    width: 70%;
+  }
+
+  .bar-progress--javascript {
+    width: 87%;
+  }
+
+  .bar-progress--css {
+    width: 95%;
+  }
+
+  .bar-progress--vue {
+    width: 70%;
+  }
+
+  .bar-progress--redux {
+    width: 85%;
+  }
+
+  .bar-progress--react-native {
+    width: 95%;
+  }
+</style>

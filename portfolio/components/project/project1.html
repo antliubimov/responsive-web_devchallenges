@@ -1,0 +1,143 @@
+  <div class="project__container">
+    <div class="project">
+      <div class="project__about">
+        <p class="project__tags">
+          #HTML #CSS #responsive
+        </p>
+        <h3 class="project__title">Recipe Blog</h3>
+        <p class="project__desc">
+          In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io
+        </p>
+        <div class="project__links">
+          <a href="#" class="project__btn">Demo</a>
+          <a href="#" class="project__btn">Code</a>
+        </div>
+      </div>
+      <figure class="project__photo">
+        <img class="project__img" src="./img/recipe.png" alt="Recipe Blog">
+      </figure>
+    </div>
+    <div class="project">
+      <div class="project__about">
+        <p class="project__tags">
+          #HTML #CSS #responsive
+        </p>
+        <h3 class="project__title">My Gallery</h3>
+        <p class="project__desc">
+          In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io
+        </p>
+        <div class="project__links">
+          <a href="#" class="project__btn">Demo</a>
+          <a href="#" class="project__btn">Code</a>
+        </div>
+      </div>
+      <figure class="project__photo">
+        <img class="project__img" src="./img/my-gallery.png" alt="My Gallery">
+      </figure>
+    </div>
+    <div class="project">
+      <div class="project__about">
+        <p class="project__tags">
+          #HTML #CSS #responsive
+        </p>
+        <h3 class="project__title">Checkout</h3>
+        <p class="project__desc">
+          In this project, I work with HTML and CSS to create a responsive page. This page is similiar with instagram profile page. The design is from devchallenge.io
+        </p>
+        <div class="project__links">
+          <a href="#" class="project__btn">Demo</a>
+          <a href="#" class="project__btn">Code</a>
+        </div>
+      </div>
+      <figure class="project__photo">
+        <img class="project__img" src="./img/checkout.png" alt="Checkout">
+      </figure>
+    </div>
+  </div>
+
+  <style scoped>
+    .project__container {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .project {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      width: 330px;
+      padding: 18px 18px 33px 18px;
+      font-family: Montserrat, sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #828282;
+      background-color : #ffffff;
+      border-radius: 12px;
+    }
+
+    .project:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    .project__tags {
+      margin-bottom: 22px;
+      color: #4f4f4f;
+    }
+
+    .project__title {
+      margin-bottom: 18px;
+      font-size: 24px;
+      line-height: 29px;
+      color: #333333;
+    }
+
+    .project__desc {
+      max-height: 100px;
+      margin-bottom: 41px;
+      overflow: hidden;
+    }
+
+    .project__links {
+      display: flex;
+    }
+
+    .project__btn {
+      display: block;
+      padding: 12px 25px;
+      text-decoration: none;
+      color: #2f80ed;
+      border: 1px solid #2f80ed;
+      border-radius: 12px;
+    }
+    .project__btn:not(:last-child) {
+      margin-right: 11px;
+    }
+
+    .project__btn:first-child {
+      color: #ffffff;
+      background-color: #2f80ed;
+    }
+
+    .project__btn:hover {
+      color: #ffffff;
+      background-color: #2f80ed;
+    }
+
+    .project__photo {
+      order: -1;
+      margin-bottom: 22px;
+      width: 292px;
+      height: 217px;
+    }
+
+    .project__img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  </style>

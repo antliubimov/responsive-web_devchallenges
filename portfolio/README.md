@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Portfolio</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/antliubimov/responsive-web_devchallenges/tree/main/portfolio">
       Solution
     </a>
     <span> | </span>
@@ -50,7 +50,9 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- HTML and CSS
+- HTML 
+- CSS
+- JavaScript
 
 ## Features
 
@@ -68,11 +70,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com) instal
 # Clone this repository
 $ git clone https://github.com/your-user-name/your-project-name
 
-# cd folder "example 1" or "example 2"
-$ cd ./'example 1'
-
-# Run the app
-$ index.html
+# Run the app (index-ex1.html or index-ex2.html)
+$ index-ex1.html
 ```
 
 ## Acknowledgements
@@ -85,5 +84,5 @@ $ index.html
 ## Contact
 
 - Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@ant.liubimov](https://github.com/antliubimov)
+- Twitter [@al757](https://twitter.com/al757)
