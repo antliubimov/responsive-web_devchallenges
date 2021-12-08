@@ -7,7 +7,7 @@ body {
   background-color : #333333;
 }
 
-.container {
+.person__container {
   width: 1100px;
   margin: 0 auto;
   padding-top: 20px;
@@ -16,10 +16,10 @@ body {
 .person {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   box-sizing: border-box;
-  width: 395px;
-  padding: 22px;
+  width: 1046px;
+  padding: 22px 25px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -30,8 +30,10 @@ body {
   border-radius: 12px;
 }
 
-.person__header {
-  margin-bottom: 31px;
+.person__main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
 }
 
 .person__name {
@@ -43,9 +45,11 @@ body {
 }
 
 .person__contacts {
-  margin-bottom: 34px;
-  padding-left: 40px;
   color: #4f4f4f;
+}
+
+.person__desc > p:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .person__email {
@@ -76,20 +80,17 @@ body {
   background-image: url("../../svg/call-24px.svg");
 }
 
-
-.person__desc > p:not(:first-child) {
-  display: none;
-}
-
-
 .person__photo {
   order: -1;
-  margin-bottom: 23px;
+  width: 272px;
+  height: 266px;
+  margin: 0;
+  padding: 0 34px 0 0;
 }
 
 .person__img {
-  width: 351px;
-  height: 343px;
+  width: 272px;
+  height: 266px;
   object-fit: cover;
   border-radius: 12px;
 }
